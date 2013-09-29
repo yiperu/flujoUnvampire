@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Helpme View Controller-->
         <scene sceneID="TeW-BF-lfx">
             <objects>
-                <viewController id="5Lz-U0-Tky" sceneMemberID="viewController">
+                <viewController id="5Lz-U0-Tky" customClass="HelpmeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ul-mF-g7g">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -40,6 +40,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnEnviar:" destination="5Lz-U0-Tky" eventType="touchUpInside" id="YQ8-nY-Po6"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ja-3V-jhc">
                                 <constraints>
@@ -56,25 +59,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="HELP ME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiN-oJ-iro">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jOe-iG-65k" firstAttribute="top" secondItem="5Ul-mF-g7g" secondAttribute="top" constant="58" id="9yx-wL-prK"/>
+                            <constraint firstItem="8Ja-3V-jhc" firstAttribute="top" secondItem="5Ul-mF-g7g" secondAttribute="top" constant="105" id="ACF-EG-AVC"/>
                             <constraint firstItem="JXJ-bb-zTP" firstAttribute="leading" secondItem="CpR-ue-XYF" secondAttribute="leading" type="default" id="Atk-2u-xvc"/>
                             <constraint firstItem="JXJ-bb-zTP" firstAttribute="trailing" secondItem="t71-Ej-D4W" secondAttribute="trailing" type="default" id="FYc-37-94M"/>
                             <constraint firstItem="t71-Ej-D4W" firstAttribute="leading" secondItem="1NF-0H-zuJ" secondAttribute="leading" type="default" id="Fe1-Po-fpb"/>
                             <constraint firstItem="JXJ-bb-zTP" firstAttribute="top" secondItem="CpR-ue-XYF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="H7X-cx-uBb"/>
-                            <constraint firstItem="acz-fr-q7N" firstAttribute="leading" secondItem="5Ul-mF-g7g" secondAttribute="leading" constant="113" id="Ibt-jV-87x"/>
+                            <constraint firstItem="tiN-oJ-iro" firstAttribute="leading" secondItem="acz-fr-q7N" secondAttribute="leading" type="default" id="Kyy-en-f9E"/>
                             <constraint firstItem="t71-Ej-D4W" firstAttribute="leading" secondItem="CpR-ue-XYF" secondAttribute="leading" type="default" id="MsC-nD-xdw"/>
+                            <constraint firstItem="jOe-iG-65k" firstAttribute="leading" secondItem="5Ul-mF-g7g" secondAttribute="leading" constant="31" id="PwB-s7-Vz7"/>
+                            <constraint firstItem="8Ja-3V-jhc" firstAttribute="leading" secondItem="5Ul-mF-g7g" secondAttribute="leading" constant="35" id="Sll-I3-2Zj"/>
+                            <constraint firstItem="jOe-iG-65k" firstAttribute="top" secondItem="5Ul-mF-g7g" secondAttribute="top" constant="69" id="WtS-T4-SAd"/>
+                            <constraint firstItem="tiN-oJ-iro" firstAttribute="top" secondItem="5Ul-mF-g7g" secondAttribute="top" constant="29" id="WuP-pb-25X"/>
                             <constraint firstAttribute="bottom" secondItem="acz-fr-q7N" secondAttribute="bottom" constant="99" id="d3Q-Vg-I1D"/>
-                            <constraint firstItem="t71-Ej-D4W" firstAttribute="top" secondItem="5Ul-mF-g7g" secondAttribute="top" constant="160" id="dBP-Id-7F8"/>
-                            <constraint firstItem="8Ja-3V-jhc" firstAttribute="top" secondItem="5Ul-mF-g7g" secondAttribute="top" constant="94" id="eTp-GY-JbN"/>
                             <constraint firstItem="8Ja-3V-jhc" firstAttribute="leading" secondItem="1NF-0H-zuJ" secondAttribute="leading" type="default" id="l3P-e6-3HH"/>
                             <constraint firstItem="1NF-0H-zuJ" firstAttribute="top" secondItem="8Ja-3V-jhc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="o3u-lm-7WD"/>
                             <constraint firstItem="8Ja-3V-jhc" firstAttribute="trailing" secondItem="t71-Ej-D4W" secondAttribute="trailing" type="default" id="pQq-Qe-VcE"/>
-                            <constraint firstItem="8Ja-3V-jhc" firstAttribute="leading" secondItem="5Ul-mF-g7g" secondAttribute="leading" constant="33" id="sFR-Po-1a0"/>
+                            <constraint firstItem="tiN-oJ-iro" firstAttribute="leading" secondItem="5Ul-mF-g7g" secondAttribute="leading" constant="113" id="sEY-O1-m2k"/>
                             <constraint firstItem="CpR-ue-XYF" firstAttribute="top" secondItem="t71-Ej-D4W" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="xUg-Dn-GCX"/>
-                            <constraint firstItem="jOe-iG-65k" firstAttribute="leading" secondItem="5Ul-mF-g7g" secondAttribute="leading" constant="29" id="zeG-Cl-wrD"/>
+                            <constraint firstItem="t71-Ej-D4W" firstAttribute="top" secondItem="5Ul-mF-g7g" secondAttribute="top" constant="171" id="y0K-hu-1nR"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -182,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="1179" y="-138"/>
         </scene>
-        <!--View Controller-->
+        <!--Inicio View Controller-->
         <scene sceneID="5TN-kW-mVL">
             <objects>
-                <viewController id="hq6-l4-ge8" sceneMemberID="viewController">
+                <viewController id="hq6-l4-ge8" customClass="InicioViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y6d-iT-RTl">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -285,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4X-YC-Z0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-474" y="429"/>
+            <point key="canvasLocation" x="-577" y="409"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9c5-af-8bn">
@@ -400,10 +410,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="f0N-xS-EE3" secondAttribute="bottom" constant="48" id="2j0-3c-AUM"/>
-                            <constraint firstItem="f0N-xS-EE3" firstAttribute="leading" secondItem="9w3-tc-LgD" secondAttribute="leading" constant="99" id="Aqb-6P-05h"/>
-                            <constraint firstItem="vFO-YD-DxD" firstAttribute="leading" secondItem="9w3-tc-LgD" secondAttribute="leading" constant="107" id="b1t-hf-E5w"/>
-                            <constraint firstItem="vFO-YD-DxD" firstAttribute="top" secondItem="9w3-tc-LgD" secondAttribute="top" constant="53" id="dNs-RD-cOG"/>
+                            <constraint firstItem="f0N-xS-EE3" firstAttribute="leading" secondItem="9w3-tc-LgD" secondAttribute="leading" constant="132" id="2AC-xb-6yb"/>
+                            <constraint firstAttribute="bottom" secondItem="f0N-xS-EE3" secondAttribute="bottom" constant="47" id="Q8a-7b-VGH"/>
+                            <constraint firstItem="vFO-YD-DxD" firstAttribute="centerX" secondItem="9w3-tc-LgD" secondAttribute="centerX" type="default" id="ag3-eg-7sV"/>
+                            <constraint firstItem="vFO-YD-DxD" firstAttribute="top" secondItem="9w3-tc-LgD" secondAttribute="top" constant="46" id="uan-cG-Ju4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8zy-5A-T6D"/>
@@ -702,24 +712,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRt-JN-7FM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-842" y="429"/>
+            <point key="canvasLocation" x="-944" y="416"/>
         </scene>
     </scenes>
     <resources>
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="FirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -23,6 +23,8 @@
 		CB0EF4FA17F79B2700C1E045 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0EF4F917F79B2700C1E045 /* SecondViewController.m */; };
 		CB0EF4FC17F79B2700C1E045 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0EF4FB17F79B2700C1E045 /* second.png */; };
 		CB0EF4FE17F79B2700C1E045 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0EF4FD17F79B2700C1E045 /* second@2x.png */; };
+		CB0EF50617F7A98B00C1E045 /* InicioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0EF50517F7A98B00C1E045 /* InicioViewController.m */; };
+		CB0EF50917F7A9DF00C1E045 /* HelpmeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0EF50817F7A9DF00C1E045 /* HelpmeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,10 @@
 		CB0EF4F917F79B2700C1E045 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		CB0EF4FB17F79B2700C1E045 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		CB0EF4FD17F79B2700C1E045 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		CB0EF50417F7A98B00C1E045 /* InicioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InicioViewController.h; sourceTree = "<group>"; };
+		CB0EF50517F7A98B00C1E045 /* InicioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InicioViewController.m; sourceTree = "<group>"; };
+		CB0EF50717F7A9DF00C1E045 /* HelpmeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpmeViewController.h; sourceTree = "<group>"; };
+		CB0EF50817F7A9DF00C1E045 /* HelpmeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpmeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,10 @@
 				CB0EF4E517F79B2600C1E045 /* AppDelegate.h */,
 				CB0EF4E617F79B2600C1E045 /* AppDelegate.m */,
 				CB0EF4EE17F79B2700C1E045 /* MainStoryboard.storyboard */,
+				CB0EF50717F7A9DF00C1E045 /* HelpmeViewController.h */,
+				CB0EF50817F7A9DF00C1E045 /* HelpmeViewController.m */,
+				CB0EF50417F7A98B00C1E045 /* InicioViewController.h */,
+				CB0EF50517F7A98B00C1E045 /* InicioViewController.m */,
 				CB0EF4F117F79B2700C1E045 /* FirstViewController.h */,
 				CB0EF4F217F79B2700C1E045 /* FirstViewController.m */,
 				CB0EF4F417F79B2700C1E045 /* first.png */,
@@ -198,6 +208,8 @@
 				CB0EF4E717F79B2600C1E045 /* AppDelegate.m in Sources */,
 				CB0EF4F317F79B2700C1E045 /* FirstViewController.m in Sources */,
 				CB0EF4FA17F79B2700C1E045 /* SecondViewController.m in Sources */,
+				CB0EF50617F7A98B00C1E045 /* InicioViewController.m in Sources */,
+				CB0EF50917F7A9DF00C1E045 /* HelpmeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
